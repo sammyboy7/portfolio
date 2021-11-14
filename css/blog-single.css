@@ -813,6 +813,7 @@ a.nav-button:hover {
   }
 }
 .single-post-body .post-body .my-avatar-info {
+  position: -webkit-sticky;
   position: sticky;
   top: 10%;
   width: 25%;

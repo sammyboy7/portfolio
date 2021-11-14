@@ -1,12 +1,10 @@
-# portfolio
+# - - - - - SmartCode Portfolio - - - - -
 
 This is the front-end part of my portfolio website
 
-########## - - - SMARTCODE WEBSITE - - - ##########
+Dynamic Parts:-
 
-// . . . . . DYNAMIC PARTS:-
-
-1. . . . Home page:
+## 1. Home page:
 
 -   My Experience
     -   company name
@@ -28,14 +26,14 @@ This is the front-end part of my portfolio website
     -   client testimonial
 -   Blog section is to borrow some posts from the blog just as display.
 
-2. . . . Blog page:
+## 2. Blog page:
 
 -   Editor's pick to be updated dynamically from a list of featured articles.
 -   The blog area will be populated with current/latest posts. The max number of posts per
     page to be 9.
 -   The load more button is to reveal more posts on the same page on click
 
-3. . . . Single post page
+## 3. Single post page
 
 -   The image on the hero is the featured image of the post
 -   The heading and the date is basically the post meta
@@ -46,6 +44,6 @@ This is the front-end part of my portfolio website
 -   Related posts are all the posts that are in the same category
 -   The more articles button should link back to the main blog page
 
-4. . . . . Login page
+## 4. Login page
 
 -   For this page, I would like a custom login link.
