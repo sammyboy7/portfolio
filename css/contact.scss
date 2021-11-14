@@ -1,16 +1,5 @@
-//colors
-$color_azure_radiance_approx: #009ff6;
-$color_dorado_approx: #525252;
-$white: #fff;
-$boulder: #505050;
-$black: #000;
-$color_wild_sand_approx: #f5f5f5;
-$color_alto_approx: #d2d1d1;
-$color_mine_shaft_approx: #3a3a3a;
-$color_dove_gray_approx: #666;
-$color_nobel_approx: #b4b0b0;
-
 @import "mixins";
+
 @keyframes pulse {
     from {
         -webkit-transform: scale3d(1, 1, 1);
@@ -114,7 +103,7 @@ body {
 p {
     font-family: "Verdana";
     line-height: 1.7rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     letter-spacing: 0.03rem;
     &.caveat {
         font-family: "Caveat";
@@ -178,281 +167,6 @@ p {
 
 .disappear {
     animation: vanish 1s forwards;
-}
-
-//  . . . . . . . Header styling . . . . . . .
-header {
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    overflow: auto;
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    transition: 1s;
-    @include laptop {
-        padding-right: 2%;
-    }
-    @include mobile {
-        padding-top: 4%;
-        padding-left: 3%;
-        padding-right: 6%;
-    }
-    &.sticky a.nav-button {
-        color: $color_azure_radiance_approx;
-        border-color: $color_azure_radiance_approx;
-        background-color: $white;
-        &:hover {
-            color: $color_azure_radiance_approx;
-            border-color: $color_azure_radiance_approx;
-            background-color: $white;
-        }
-    }
-
-    #check {
-        display: none;
-    }
-
-    .checkbtn {
-        display: none;
-        @include mobile {
-            display: flex;
-            z-index: 500;
-        }
-        @include tablet {
-            display: flex;
-            z-index: 500;
-        }
-        @include smalllaptop {
-            display: flex;
-            z-index: 500;
-        }
-    }
-}
-.sticky {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: $white;
-    transition: 1s;
-    z-index: 500;
-    @include mobile {
-        padding-top: 4%;
-        padding-left: 3%;
-        padding-right: 6%;
-    }
-    @include tablet {
-        padding-top: 2%;
-    }
-    @include smalllaptop {
-        padding-top: 2%;
-    }
-    @include laptop {
-        padding-top: 2%;
-        padding-right: 2%;
-    }
-}
-
-a {
-    text-decoration: none;
-    list-style: none;
-    &#logo-link {
-        align-self: center;
-        padding-left: 2%;
-        display: flex;
-        align-items: center;
-        .logo {
-            width: 12%;
-            height: 12%;
-        }
-
-        p {
-            margin-top: 1%;
-            .blue {
-                color: $color_azure_radiance_approx;
-                font-family: "Verdana";
-                font-size: 1.5rem;
-                font-weight: 500;
-                @include tablet {
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                }
-                @include mobile {
-                    font-size: 1.3rem;
-                    font-weight: 500;
-                }
-            }
-            .grey {
-                @extend .blue;
-                color: $color_dorado_approx;
-            }
-        }
-    }
-    &.nav-button {
-        align-self: center;
-        color: $white;
-        margin-right: 6%;
-        font-family: "Verdana";
-        font-weight: 700;
-        font-size: 0.7rem;
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-        padding-top: 0.7%;
-        padding-bottom: 0.75%;
-        padding-right: 1.7%;
-        padding-left: 1.7%;
-        border: solid 1.5px;
-        border-radius: 5px;
-        border-color: $white;
-        background-color: $color_azure_radiance_approx;
-        box-shadow: none;
-        &:hover {
-            color: $color_azure_radiance_approx;
-            border-color: $color_azure_radiance_approx;
-            background-color: $white;
-        }
-        @include mobile {
-            display: none;
-        }
-        @include tablet {
-            display: none;
-        }
-        @include smalllaptop {
-            display: none;
-        }
-    }
-}
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0;
-    width: 100%;
-    align-items: center;
-    @include mobile {
-        padding-top: 2%;
-    }
-    @include tablet {
-        padding-top: 2%;
-    }
-    @include smalllaptop {
-        padding-top: 2%;
-        padding-right: 2%;
-    }
-
-    .toggle {
-        align-self: center;
-        cursor: pointer;
-        display: none;
-        justify-content: space-between;
-        text-decoration: none;
-        fill: $color_dorado_approx;
-        @include mobile {
-            display: flex;
-            margin-right: 5%;
-            z-index: 502;
-            align-items: center;
-            width: 1.6rem;
-        }
-        @include tablet {
-            display: flex;
-            margin-right: 5%;
-            z-index: 502;
-            width: 2rem;
-        }
-        @include smalllaptop {
-            display: flex;
-            margin-right: 5%;
-            z-index: 502;
-            width: 2rem;
-        }
-    }
-    .active {
-        display: flex;
-        transition: all 1s ease-in-out;
-    }
-    ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        justify-content: space-between;
-        margin-left: -14%;
-        @include mobile {
-            flex-direction: column;
-            top: 8%;
-            padding-top: 5%;
-            padding-bottom: 10%;
-            padding-right: 5%;
-            position: fixed;
-            height: auto;
-            width: 50%;
-            left: 50%;
-            background-color: $white;
-            display: none;
-            transition: all 1s ease-in-out;
-            align-items: flex-end;
-            margin-left: 0;
-        }
-        @include tablet {
-            flex-direction: column;
-            top: 8.5%;
-            padding-top: 5%;
-            padding-bottom: 10%;
-            padding-right: 5%;
-            position: fixed;
-            height: auto;
-            width: 30%;
-            left: 70%;
-            background-color: $white;
-            display: none;
-            transition: all 1s ease-in-out;
-            align-items: flex-end;
-            margin-left: 0;
-        }
-
-        @include smalllaptop {
-            flex-direction: column;
-            top: 10.5%;
-            padding-top: 3%;
-            padding-bottom: 10%;
-            padding-right: 5%;
-            position: fixed;
-            height: auto;
-            width: 30%;
-            left: 70%;
-            background-color: $white;
-            display: none;
-            transition: all 1s ease-in-out;
-            align-items: flex-end;
-            margin-left: 0;
-        }
-
-        li a {
-            color: $color_mine_shaft_approx;
-            text-decoration: none;
-            display: block;
-            padding: 20px;
-            font-family: "Verdana";
-            font-size: 0.85rem;
-            letter-spacing: 0.07rem;
-            font-weight: 500;
-            text-align: center;
-            @include tablet {
-                padding-top: 20%;
-                padding-bottom: 20%;
-            }
-            @include smalllaptop {
-                padding-top: 20%;
-                padding-bottom: 20%;
-            }
-            &:hover {
-                color: $color_azure_radiance_approx;
-            }
-            &:active {
-                color: $color_azure_radiance_approx;
-            }
-        }
-    }
 }
 
 // . . . . . . . Contact styling . . . . . . .
@@ -523,7 +237,7 @@ a {
         text-align: left;
         width: 100%;
         background-color: $white;
-        padding: 0 5% 30% 5%;
+        padding: 0 5% 0 5%;
         color: $color_dorado_approx;
         background-color: transparent;
         @include mobile {
@@ -697,7 +411,7 @@ a {
         .contact-info-items {
             border-color: $boulder;
             align-content: center;
-            padding-bottom: 30%;
+            //padding-bottom: 30%;
             @include mobile {
                 width: 100%;
                 padding: 0;
@@ -708,7 +422,8 @@ a {
             }
             @include smalllaptop {
                 width: 100%;
-                padding: 0;
+                padding-bottom: 0;
+                margin-top: -10%;
             }
 
             ul {
@@ -817,11 +532,18 @@ footer {
     width: 100%;
     padding: 2% 0;
     bottom: 0;
-    position: fixed;
+    @include mobile {
+        padding-bottom: 5%;
+    }
     @include smalllaptop {
         position: relative;
     }
 }
+
+.footer-form {
+    display: none;
+}
+
 .copyright-text {
     text-align: center;
     padding-bottom: 3%;
@@ -834,14 +556,27 @@ ul.social {
     justify-content: center;
     list-style-type: none;
     margin: 0 auto;
+    @include mobile {
+        padding-bottom: 1%;
+    }
     li {
         color: $color_nobel_approx;
         text-align: center;
-        margin: 0 7%;
+        margin: 0 1.1rem;
+        @include mobile {
+            margin: 0.8rem;
+        }
         a {
             svg {
                 fill: $color_nobel_approx;
                 cursor: pointer;
+                width: 1.3rem;
+                height: 1.3rem;
+                @include mobile {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+
                 &:hover {
                     fill: $white;
                 }
