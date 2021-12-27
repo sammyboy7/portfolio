@@ -1,4 +1,5 @@
 @import "mixins";
+@import "header";
 
 @keyframes pulse {
     from {
@@ -660,3 +661,5 @@ p {
         }
     }
 }
+
+@import "footer";
