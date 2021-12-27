@@ -147,6 +147,11 @@ footer {
     @include mobile {
         padding-bottom: 0.5rem;
     }
+    span {
+        @include mobile {
+            display: none;
+        }
+    }
 }
 ul.social {
     display: flex;

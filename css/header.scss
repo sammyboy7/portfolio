@@ -190,6 +190,15 @@ a {
     .active {
         display: flex;
         transition: all 1s ease-in-out;
+        @include mobile {
+            margin-top: -3.5%;
+        }
+        @include tablet {
+            margin-top: -3%;
+        }
+        @include smalllaptop {
+            margin-top: -2%;
+        }
     }
     ul {
         display: flex;

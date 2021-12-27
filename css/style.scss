@@ -179,7 +179,7 @@ h4 {
     width: 100%;
     align-items: center;
     justify-content: left;
-    background-image: url("../images/Light-mode-hero-bg.webp");
+    background-image: url("../images/Light-mode-hero-bg-lg.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -192,6 +192,9 @@ h4 {
     }
     @include smalllaptop {
         background-image: url("../images/Light-mode-tablet-hero.webp");
+    }
+    @include laptop {
+        background-image: url("../images/Light-mode-hero-bg.webp");
     }
 }
 .hero-intro {
@@ -221,8 +224,11 @@ h4 {
             line-height: 3.5rem;
         }
         @include smalllaptop {
-            font-size: 3rem;
-            line-height: 4rem;
+            font-size: 2.8rem;
+            line-height: 4.5rem;
+        }
+        @include laptop {
+            font-size: 2.8rem;
         }
     }
     .caveat {
@@ -499,6 +505,9 @@ h4 {
             height: 350px;
             width: 100%;
         }
+        @include smalllaptop {
+            margin-top: 0;
+        }
         h3 {
             font-family: "Verdana";
             color: #00a0f6d5;
@@ -597,6 +606,10 @@ h4 {
         padding: 0;
         text-align: center;
     }
+    @include smalllaptop {
+        padding-top: 0;
+        margin: auto 0;
+    }
     h3 {
         font-family: "Verdana";
         font-size: 1.5rem !important;
@@ -606,7 +619,7 @@ h4 {
         text-align: left !important;
         font-weight: 500 !important;
         @include mobile {
-            font-size: 1.5rem;
+            font-size: 1.3rem !important;
             text-align: left;
             padding-bottom: 0;
         }
@@ -693,6 +706,21 @@ h4 {
         padding: 0;
         text-align: center;
     }
+    @include tablet {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: auto 0;
+    }
+    @include smalllaptop {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: auto 0;
+        //justify-content: flex-end;
+    }
     h3 {
         font-family: "Verdana";
         font-size: 1.5rem !important;
@@ -702,8 +730,7 @@ h4 {
         text-align: left !important;
         font-weight: 500 !important;
         @include mobile {
-            font-size: 1.5rem;
-            text-align: left;
+            font-size: 1.3rem !important;
             padding-bottom: 0;
         }
         @include tablet {
@@ -736,7 +763,7 @@ h4 {
         }
     }
     button {
-        align-self: center;
+        //align-self: center;
         color: $white;
         font-family: "Verdana";
         font-weight: 600;
@@ -765,7 +792,7 @@ h4 {
             padding-bottom: 4%;
             padding-right: 5%;
             padding-left: 5%;
-            margin-left: 54%;
+            //margin-left: 54%;
         }
         @include smalllaptop {
             margin-top: 5%;
@@ -773,7 +800,7 @@ h4 {
             padding-bottom: 4%;
             padding-right: 5%;
             padding-left: 5%;
-            margin-left: 54%;
+            // margin-left: 55%;
         }
         &:hover {
             color: $color_azure_radiance_approx;
@@ -789,6 +816,7 @@ h4 {
         justify-content: center;
         align-content: center;
     }
+
     img {
         width: 50%;
         height: 10%;
@@ -856,7 +884,7 @@ h4 {
 
         .image1-flipped,
         .image3-flipped {
-            margin-top: 10%;
+            margin: 5% 0;
         }
     }
     @include smalllaptop {
@@ -868,10 +896,10 @@ h4 {
         .image4-flipped {
             display: none;
         }
-
+        // changes made here
         .image1-flipped,
         .image3-flipped {
-            margin-top: 10%;
+            margin: 5% 0;
         }
     }
 }
@@ -949,7 +977,7 @@ h4 {
 
         .image2,
         .image4 {
-            margin-top: 10%;
+            margin: 5% 0;
         }
     }
     @include smalllaptop {
@@ -964,7 +992,7 @@ h4 {
 
         .image2,
         .image4 {
-            margin-top: 10%;
+            margin: 5% 0;
         }
     }
 }
@@ -1565,6 +1593,7 @@ h4 {
     flex-wrap: wrap;
     padding-top: 10%;
     padding-bottom: 5%;
+
     @include mobile {
         overflow: scroll;
         flex-wrap: nowrap;
@@ -1582,6 +1611,8 @@ h4 {
     }
     div {
         width: 32%;
+        background-color: $white;
+
         @include mobile {
             width: 100%;
             margin: 0 5%;

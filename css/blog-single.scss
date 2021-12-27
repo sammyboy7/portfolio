@@ -772,6 +772,8 @@ p {
     }
     div {
         width: 30%;
+        background-color: $white;
+
         @include mobile {
             width: 100%;
             margin: 10% 0;

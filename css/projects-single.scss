@@ -17,6 +17,8 @@
     }
 }
 
+
+
 @keyframes vanish {
     100% {
         opacity: 0;
@@ -64,7 +66,7 @@ body {
 p {
     font-family: "Verdana";
     line-height: 1.7rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     letter-spacing: 0.03rem;
     @include mobile {
         font-size: 0.9rem;
@@ -287,44 +289,77 @@ p {
     }
     .process {
         width: 50%;
+        height: auto;
+        position: relative;
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        transition: 0.5s;
+        overflow: hidden;
 
         img {
             width: 100%;
+            padding: 5%;
+            @include mobile {
+                width: 70%;
+            }
+            @include tablet {
+                width: 40%;
+            }
         }
-        @include mobile {
-            width: 100%;
-        }
-        @include tablet {
-            width: 100%;
-        }
-        @include smalllaptop {
-            width: 100%;
+    }
+    .direction {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20%;
+        p span {
+            font-size: 2rem;
+            margin: 2rem 0;
+            cursor: pointer;
+            color: $color_azure_radiance_approx;
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+            line-height: 1.6rem;
+            text-align: center;
+            border: solid 1.5px;
+            border-color: $color_azure_radiance_approx;
+            border-radius: 5px;
+            &:hover {
+                background: $color_azure_radiance_approx;
+                color: white;
+            }
         }
     }
 }
-.wireframes-section {
-    padding: 5% 15%;
-    .title {
-        h3 {
-            font-family: "Verdana";
-            color: $color_dorado_approx;
-            font-size: 1.7rem;
-            padding-bottom: 3%;
-            text-align: center;
-            font-weight: 500;
-            @include mobile {
-                font-size: 1.5rem;
-            }
+
+.title {
+    padding: 10% 15% 0 15%;
+    h3 {
+        font-family: "Verdana";
+        color: $color_dorado_approx;
+        font-size: 1.7rem;
+        padding-bottom: 3%;
+        text-align: center;
+        font-weight: 500;
+        @include mobile {
+            font-size: 1.5rem;
         }
+    }
+}
+
+.wireframes-section {
+    width: 100%;
+    height: auto;
+    padding: 0 15%;
+    &::-webkit-scrollbar {
+        display: none;
     }
     .wireframes {
+        width: 100%;
+        height: auto;
+        position: relative;
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
+        transition: 0.5s;
+        overflow: hidden;
         img {
             width: 35%;
             padding: 5%;
@@ -336,30 +371,49 @@ p {
             }
         }
     }
-}
-.final-designs-section {
-    padding: 5% 15%;
-    .title {
-        h3 {
-            font-family: "Verdana";
-            color: $color_dorado_approx;
-            font-size: 1.7rem;
-            padding-bottom: 3%;
+    .direction {
+        display: flex;
+        justify-content: flex-end;
+        p span {
+            font-size: 2rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            color: $color_azure_radiance_approx;
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+            line-height: 1.6rem;
             text-align: center;
-            font-weight: 500;
-            @include mobile {
-                font-size: 1.5rem;
+            border: solid 1.5px;
+            border-color: $color_azure_radiance_approx;
+            border-radius: 5px;
+            &:hover {
+                background: $color_azure_radiance_approx;
+                color: white;
             }
         }
+    }
+}
+
+.final-designs-section {
+    width: 100%;
+    height: auto;
+    padding: 0 15%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        display: none;
     }
     .final-designs {
+        width: 100%;
+        height: auto;
+        position: relative;
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-
+        transition: 0.5s;
+        overflow: hidden;
         img {
             width: 35%;
             padding: 5%;
+            left: 0;
             @include mobile {
                 width: 70%;
             }
@@ -368,9 +422,32 @@ p {
             }
         }
     }
+    .direction {
+        display: flex;
+        justify-content: flex-end;
+        p span {
+            font-size: 2rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            color: $color_azure_radiance_approx;
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+            line-height: 1.6rem;
+            text-align: center;
+            border: solid 1.5px;
+            border-color: $color_azure_radiance_approx;
+            border-radius: 5px;
+            &:hover {
+                background: $color_azure_radiance_approx;
+                color: white;
+            }
+        }
+    }
 }
+
 .client-remarks {
-    padding: 5% 25% 25% 25%;
+    padding: 10% 25% 25% 25%;
     @include mobile {
         padding: 20% 15% 60% 15%;
     }
