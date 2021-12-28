@@ -1460,9 +1460,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     margin: auto 0;
   }
 }
@@ -1477,9 +1474,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     margin: auto 0;
   }
 }
@@ -1504,12 +1498,14 @@ h4 {
 @media (min-width: 501px) and (max-width: 768px) {
   .featured-content-flipped h3 {
     font-size: 2rem;
+    margin-left: auto;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .featured-content-flipped h3 {
     font-size: 2rem;
+    margin-left: auto;
   }
 }
 
@@ -1550,6 +1546,18 @@ h4 {
   }
 }
 
+@media (min-width: 501px) and (max-width: 768px) {
+  .featured-content-flipped a {
+    text-align: right;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .featured-content-flipped a {
+    text-align: right;
+  }
+}
+
 .featured-content-flipped button {
   color: #fff;
   font-family: "Verdana";
@@ -1586,6 +1594,7 @@ h4 {
     padding-bottom: 4%;
     padding-right: 5%;
     padding-left: 5%;
+    margin-left: auto;
   }
 }
 
@@ -1596,6 +1605,7 @@ h4 {
     padding-bottom: 4%;
     padding-right: 5%;
     padding-left: 5%;
+    margin-left: auto;
   }
 }
 
