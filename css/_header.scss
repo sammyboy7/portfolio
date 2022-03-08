@@ -43,7 +43,7 @@ header {
             display: flex;
             z-index: 500;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             display: flex;
             z-index: 500;
         }
@@ -65,7 +65,7 @@ header {
     @include tablet {
         padding-top: 2%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding-top: 2%;
     }
     @include laptop {
@@ -138,7 +138,7 @@ a {
         @include tablet {
             display: none;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             display: none;
         }
     }
@@ -155,7 +155,7 @@ a {
     @include tablet {
         padding-top: 2%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding-top: 2%;
         padding-right: 2%;
     }
@@ -180,7 +180,7 @@ a {
             z-index: 502;
             width: 2rem;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             display: flex;
             margin-right: 5%;
             z-index: 502;
@@ -196,7 +196,7 @@ a {
         @include tablet {
             margin-top: -3%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             margin-top: -2%;
         }
     }
@@ -239,7 +239,7 @@ a {
             margin-left: 0;
         }
 
-        @include smalllaptop {
+        @include tablet-pro {
             flex-direction: column;
             top: 10.5%;
             padding-top: 3%;
@@ -270,7 +270,7 @@ a {
                 padding-top: 20%;
                 padding-bottom: 20%;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 padding-top: 20%;
                 padding-bottom: 20%;
             }

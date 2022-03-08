@@ -57,7 +57,7 @@ body {
     @include tablet {
         background-image: url("../images/Tablet-single-bg.webp");
     }
-    @include smalllaptop {
+    @include tablet-pro {
         background-image: url("../images/Tablet-single-bg.webp");
     }
 }
@@ -147,7 +147,7 @@ p {
     @include tablet {
         width: 50%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         width: 40%;
     }
     h1 {
@@ -313,7 +313,7 @@ p {
     @include tablet {
         justify-content: center;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         justify-content: center;
     }
     .loginform {
@@ -325,7 +325,7 @@ p {
         @include tablet {
             width: 100%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 80%;
         }
     }
@@ -345,7 +345,7 @@ p {
             padding: 5% 5%;
             margin-bottom: 5%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 60%;
             padding: 5% 5%;
             margin-bottom: 5%;
@@ -357,7 +357,7 @@ p {
             width: 100%;
             margin-bottom: 5%;
             color: $color_azure_radiance_approx;
-            @include smalllaptop {
+            @include tablet-pro {
                 font-size: 1.9rem;
             }
         }
@@ -389,7 +389,7 @@ p {
             @include mobile {
                 padding: 5% 4%;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 font-size: 0.9rem;
             }
             &:focus {

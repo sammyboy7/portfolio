@@ -199,7 +199,7 @@ p {
         height: 100%;
         padding: 0 10%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         justify-content: center;
         width: 100%;
         height: 100%;
@@ -245,7 +245,7 @@ p {
         justify-content: center;
         height: auto;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding: 0 5% 0 5%;
         background-image: none;
         justify-content: center;
@@ -282,7 +282,7 @@ p {
         width: 90%;
         flex-direction: column;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         margin-top: 20%;
         display: flex;
         align-items: center;
@@ -307,7 +307,7 @@ p {
             width: 100%;
             margin: 0;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             text-align: center;
             width: 100%;
             margin: 0;
@@ -330,7 +330,7 @@ p {
                 height: auto;
                 box-shadow: none;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 width: 800px;
                 height: auto;
                 box-shadow: none;
@@ -381,7 +381,7 @@ p {
             box-shadow: 0 0 7rem -3rem $color_dove_gray_approx;
             background-color: $white;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin-top: -25%;
             padding-top: 2%;
@@ -485,7 +485,7 @@ p {
         margin-top: 15%;
         margin-bottom: 20%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         margin-top: 10%;
         padding-right: 10%;
         padding-left: 10%;
@@ -566,7 +566,7 @@ p {
         margin-top: -3%;
         margin-bottom: 2%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         margin-top: -5%;
         margin-bottom: 2%;
     }
@@ -591,7 +591,7 @@ p {
             width: 50%;
             margin: 5% 0 2% 0;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             text-align: center;
             align-items: center;
             justify-content: center;
@@ -621,7 +621,7 @@ p {
                 text-align: left;
                 padding-left: 4%;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 text-align: left;
                 padding-left: 2.5%;
             }
@@ -645,7 +645,7 @@ p {
                 text-align: left;
                 padding-left: 4%;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 text-align: left;
                 padding-left: 2.5%;
             }
@@ -662,7 +662,7 @@ p {
                 width: 95%;
                 height: auto;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 width: 95%;
                 height: auto;
             }

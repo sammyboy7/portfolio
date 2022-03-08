@@ -102,15 +102,17 @@ body {
 
 p {
     font-family: "Verdana";
-    line-height: 1.7rem;
-    font-size: 0.85rem;
-    letter-spacing: 0.05rem;
+    line-height: 1.8vw;
+    font-size: 0.8vw;
+    letter-spacing: 0.05vw;
     @include mobile {
-        font-size: 0.9rem;
+        line-height: 7vw;
+        font-size: 3.5vw;
+        letter-spacing: 0.05vw;
     }
     &.caveat {
         font-family: "Caveat";
-        font-size: 2rem;
+        font-size: 1.8vw;
     }
     &.copyright-text a {
         color: $color_azure_radiance_approx;
@@ -121,7 +123,7 @@ h1,
 h2,
 h3,
 h4 {
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.05vw;
 }
 
 // . . . . . . . Preloader styling . . . . . . .
@@ -200,7 +202,7 @@ h4 {
     @include tablet {
         background-image: url("../images/Light-mode-tablet-hero.webp");
     }
-    @include smalllaptop {
+    @include tablet-pro {
         background-image: url("../images/Light-mode-tablet-hero.webp");
     }
     @include laptop {
@@ -210,30 +212,33 @@ h4 {
 .hero-intro {
     font-family: "Verdana";
     color: $color_dorado_approx;
+    font-size: 1vw;
     @include mobile {
         margin-top: -30%;
-        font-size: 0.7rem;
+        font-size: 2.5vw;
     }
     @include tablet {
         margin-top: -10%;
+        font-size: 1.5vw;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         margin-top: -10%;
+        font-size: 1.5vw;
     }
     .hero-bolder {
-        font-size: 3.5rem;
+        font-size: 3vw;
         font-weight: 700;
-        line-height: 5rem;
+        line-height: 4vw;
         @include mobile {
-            font-size: 1.7rem;
-            line-height: 3rem;
+            font-size: 6.5vw;
+            line-height: 11vw;
             letter-spacing: 0;
         }
         @include tablet {
-            font-size: 2.5rem;
-            line-height: 3.5rem;
+            font-size: 5vw;
+            line-height: 8vw;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             font-size: 2.8rem;
             line-height: 4.5rem;
         }
@@ -243,15 +248,22 @@ h4 {
     }
     .caveat {
         @include mobile {
-            font-size: 1.5rem;
+            font-size: 5vw;
+        }
+        @include tablet {
+            font-size: 3vw;
+        }
+        @include tablet-pro {
+            font-size: 2.5vw;
         }
     }
+    // don't forget to style this
     a {
         align-self: center;
         color: $white;
         font-family: "Verdana";
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.8vw;
         letter-spacing: 0.1rem;
         text-transform: capitalize;
         padding-top: 2%;
@@ -282,7 +294,7 @@ h4 {
             padding-right: 4%;
             padding-left: 4%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             margin-top: 10%;
             display: inline-block;
             padding-top: 3%;
@@ -293,7 +305,7 @@ h4 {
     }
     h3 {
         font-family: "Verdana";
-        line-height: 2.5rem;
+        line-height: 2.5vw;
         font-weight: 700;
     }
 }
@@ -326,7 +338,7 @@ h4 {
         padding-right: 10%;
         padding-left: 10%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding-right: 15%;
         padding-left: 15%;
     }
@@ -348,7 +360,7 @@ h4 {
             padding: 0;
             padding-bottom: 15%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
             padding: 0;
             padding-bottom: 15%;
@@ -393,7 +405,7 @@ h4 {
             @include tablet {
                 margin-left: 35%;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 margin-left: 35%;
             }
             @include laptop {
@@ -426,7 +438,7 @@ h4 {
         width: 100%;
         padding-left: 0;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         width: 100%;
         padding-left: 0;
     }
@@ -516,7 +528,7 @@ h4 {
             height: 350px;
             width: 100%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             margin-top: 0;
         }
         h3 {
@@ -618,7 +630,7 @@ h4 {
         padding: 0;
         text-align: center;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding-top: 0;
         margin: auto 0;
     }
@@ -638,7 +650,7 @@ h4 {
         @include tablet {
             font-size: 2rem;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             font-size: 2rem;
         }
         @include laptop {
@@ -657,7 +669,7 @@ h4 {
             background-color: $white;
             box-shadow: 0 0 15px 1px $boulder;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             padding: 20px;
             margin-right: -65%;
             background-color: $white;
@@ -695,7 +707,7 @@ h4 {
             padding-right: 5%;
             padding-left: 5%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             margin-top: 5%;
             padding-top: 4%;
             padding-bottom: 4%;
@@ -724,7 +736,7 @@ h4 {
         flex-direction: column;
         margin: auto 0;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding-top: 0;
         display: flex;
         flex-direction: column;
@@ -746,7 +758,7 @@ h4 {
             font-size: 2rem;
             margin-left: auto;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             font-size: 2rem;
             margin-left: auto;
         }
@@ -766,7 +778,7 @@ h4 {
             background-color: $white;
             box-shadow: 0 0 15px 1px $boulder;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             padding: 20px;
             margin-left: -65%;
             background-color: $white;
@@ -777,7 +789,7 @@ h4 {
         @include tablet {
             text-align: right;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             text-align: right;
         }
     }
@@ -813,7 +825,7 @@ h4 {
             padding-left: 5%;
             margin-left: auto;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             margin-top: 5%;
             padding-top: 4%;
             padding-bottom: 4%;
@@ -850,7 +862,7 @@ h4 {
             width: 100%;
             height: auto;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
             height: auto;
         }
@@ -906,7 +918,7 @@ h4 {
             margin: 5% 0;
         }
     }
-    @include smalllaptop {
+    @include tablet-pro {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -941,7 +953,7 @@ h4 {
             width: 100%;
             height: auto;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
             height: auto;
         }
@@ -999,7 +1011,7 @@ h4 {
             margin: 5% 0;
         }
     }
-    @include smalllaptop {
+    @include tablet-pro {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -1059,7 +1071,7 @@ h4 {
                 width: 12%;
                 height: auto;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 width: 13%;
                 height: auto;
             }
@@ -1105,7 +1117,7 @@ h4 {
         height: 100%;
         padding: 0 10%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         justify-content: center;
         width: 100%;
         height: 100%;
@@ -1187,7 +1199,7 @@ h4 {
             height: 60px;
             width: 60px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             height: 60px;
             width: 60px;
         }
@@ -1216,7 +1228,7 @@ h4 {
         margin-right: 0;
         width: 100%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -1249,7 +1261,7 @@ h4 {
             width: 50px;
             height: 50px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin: 0 2% 0 2%;
             width: 50px;
@@ -1275,7 +1287,7 @@ h4 {
             width: 50px;
             height: 50px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin: 0 2% 0 2%;
             width: 50px;
@@ -1302,7 +1314,7 @@ h4 {
             width: 50px;
             height: 50px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin: 0 2% 0 2%;
             width: 50px;
@@ -1329,7 +1341,7 @@ h4 {
             width: 50px;
             height: 50px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin: 0 2% 0 2%;
             width: 50px;
@@ -1360,7 +1372,7 @@ h4 {
             width: 50px;
             height: 50px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin: 0 2% 0 2%;
             width: 50px;
@@ -1391,7 +1403,7 @@ h4 {
             width: 50px;
             height: 50px;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: relative;
             margin: 0 2% 0 2%;
             width: 50px;
@@ -1416,7 +1428,7 @@ h4 {
         margin-right: 0%;
         text-align: center;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         margin-left: 5%;
         margin-right: 5%;
         text-align: center;
@@ -1439,7 +1451,7 @@ h4 {
                 padding-top: 5%;
                 text-align: center;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 padding-top: 5%;
                 text-align: center;
             }
@@ -1454,7 +1466,7 @@ h4 {
             @include tablet {
                 text-align: center;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 text-align: center;
             }
             span {
@@ -1484,7 +1496,7 @@ h4 {
             margin-left: -39%;
             width: 10%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             position: absolute;
             margin-top: -4.5%;
             margin-left: -35%;
@@ -1513,7 +1525,7 @@ h4 {
         margin-bottom: 20%;
         padding-top: 5%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding-right: 15%;
         padding-left: 15%;
         margin-bottom: 20%;
@@ -1562,7 +1574,7 @@ h4 {
                 padding-right: 3%;
                 padding-left: 3%;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 padding-top: 2%;
                 padding-bottom: 2%;
                 padding-right: 3%;
@@ -1624,7 +1636,7 @@ h4 {
         margin: auto;
         overflow: scroll;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         flex-wrap: nowrap;
         margin: auto;
         overflow: scroll;
@@ -1641,7 +1653,7 @@ h4 {
             width: 100%;
             margin: 0 2%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
             margin: 0 2%;
         }
@@ -1679,7 +1691,7 @@ h4 {
                 width: auto;
                 height: 190px;
             }
-            @include smalllaptop {
+            @include tablet-pro {
                 width: auto;
                 height: 225px;
             }

@@ -40,7 +40,7 @@ footer {
         margin-bottom: 5%;
         padding-bottom: 3%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         width: 60vw;
         padding: 8% 10%;
         margin-bottom: 5%;
@@ -126,7 +126,7 @@ footer {
             padding-right: 5%;
             padding-left: 5%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             margin-top: 3%;
             padding-top: 3%;
             padding-bottom: 3%;

@@ -151,7 +151,7 @@ p {
         display: flex;
         flex-direction: column;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding: 20% 15% 10% 15%;
         display: flex;
         flex-direction: column;
@@ -167,7 +167,7 @@ p {
         @include tablet {
             width: 100%;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
         }
         img {
@@ -186,7 +186,7 @@ p {
             width: 100%;
             padding: 10% 0 0 0;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
             padding: 10% 0 0 0;
         }
@@ -245,7 +245,7 @@ p {
         display: flex;
         flex-direction: column-reverse;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding: 10% 15%;
         display: flex;
         flex-direction: column-reverse;
@@ -265,7 +265,7 @@ p {
             width: 100%;
             padding: 10% 0 0 0;
         }
-        @include smalllaptop {
+        @include tablet-pro {
             width: 100%;
             padding: 10% 0 0 0;
         }
@@ -454,7 +454,7 @@ p {
     @include tablet {
         padding: 5% 15% 40% 15%;
     }
-    @include smalllaptop {
+    @include tablet-pro {
         padding: 5% 20% 30% 20%;
     }
     .remarks {

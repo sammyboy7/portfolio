@@ -43,7 +43,7 @@ $color_nobel_approx: #b4b0b0;
     }
 }
 
-@mixin smalllaptop {
+@mixin tablet-pro {
     @media (min-width: 769px) and (max-width: 1024px) {
         @content;
     }
