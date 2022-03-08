@@ -370,7 +370,7 @@ h4 {
             font-family: "Verdana";
             color: $black;
             font-weight: 500;
-            font-size: 1.5rem;
+            font-size: 1.4vw;
             @include mobile {
                 margin-bottom: -5%;
                 text-align: center;
@@ -382,8 +382,8 @@ h4 {
             color: $white;
             font-family: "Verdana";
             font-weight: 600;
-            font-size: 0.8rem;
-            letter-spacing: 0.1rem;
+            font-size: 0.75vw;
+            letter-spacing: 0.1vw;
             text-transform: capitalize;
             padding-top: 2%;
             padding-bottom: 2%;
@@ -447,7 +447,7 @@ h4 {
         font-family: "Verdana";
         color: $black;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.4vw;
         @include mobile {
             text-align: center;
             margin-bottom: 2%;
@@ -458,8 +458,8 @@ h4 {
         //add media query mixin here
         float: left;
         width: 20%;
-        height: 100%;
-        border-left: 1px solid #00a0f679;
+        height: auto;
+        border-left: 0.05vw solid #00a0f679;
         @include mobile {
             overflow: scroll;
             display: flex;
@@ -467,19 +467,17 @@ h4 {
             flex-direction: row;
             width: 100%;
             border-left: 0;
-            border-top: 1px solid #00a0f679;
+            border-top: 0.05vw solid #00a0f679;
         }
         @include tablet {
-            border-left: 2px solid #00a0f679;
+            border-left: 0.05vw solid #00a0f679;
         }
         @include laptop {
             width: 25%;
         }
         > div {
-            line-height: 50px;
-            letter-spacing: 1px;
+            line-height: 1.8vw;
             font-weight: 500;
-            font-size: 0.8rem;
             font-family: "Verdana";
             color: $color_dorado_approx;
             cursor: pointer;
@@ -495,14 +493,14 @@ h4 {
             }
             &.active {
                 color: $color_azure_radiance_approx;
-                border-left: 3px solid $color_azure_radiance_approx;
-                margin-left: -2%;
+                border-left: 0.25vw solid $color_azure_radiance_approx;
+                margin-left: -2.1%;
                 animation: fade 1s ease;
                 @include mobile {
-                    border-top: 6px solid $color_azure_radiance_approx;
+                    border-top: 2vw solid $color_azure_radiance_approx;
                     border-left: 0;
                     animation: fade 1s ease;
-                    margin-top: -1.5%;
+                    margin-top: -1.7%;
                 }
                 @include tablet {
                     border-left: 4px solid $color_azure_radiance_approx;
@@ -511,12 +509,6 @@ h4 {
                 }
             }
         }
-        div i {
-            display: inline-block;
-            margin-left: 10px;
-            margin-right: 5px;
-            margin-bottom: -2%;
-        }
     }
     .tab-content {
         position: relative;
@@ -524,6 +516,7 @@ h4 {
         overflow: hidden;
         margin-top: -1%;
         
+        //remember to fix responsiveness
         @include mobile {
             height: 350px;
             width: 100%;
@@ -535,6 +528,7 @@ h4 {
             font-family: "Verdana";
             color: #00a0f6d5;
             font-weight: 500;
+            font-size: 1vw;
             @include mobile {
                 font-size: 1rem;
                 text-align: left;
@@ -549,23 +543,12 @@ h4 {
             @include mobile {
                 padding-left: 0;
             }
-            > i {
-                display: inline-block;
-                color: $color_wild_sand_approx;
-                font-weight: 600;
-                text-align: left;
-                line-height: 50px;
-                border-radius: 50%;
-            }
             &.active {
                 opacity: 1;
                 animation: fade 1s ease;
                 animation: appear 1s;
             }
         }
-    }
-    .tab-indicator {
-        display: none;
     }
 }
 
@@ -587,7 +570,7 @@ h4 {
         color: $black;
         font-family: "Verdana";
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.4vw;
         padding-bottom: 1.5%;
         @include mobile {
             font-size: 1.3rem;
