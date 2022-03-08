@@ -1,8 +1,40 @@
+@font-face {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/verdana/Verdana.woff2") format("woff2"), url("../fonts/verdana/Verdana.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-style: bold;
+  font-weight: 700;
+  src: local(""), url("../fonts/verdana/Verdana-Bold.woff2") format("woff2"), url("../fonts/verdana/Verdana-Bold.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /*@mixin widescreen CSS {
     @media (min-width: 1441px) and (max-width: 1920px) {
         @content;
     }
 }*/
+@font-face {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/verdana/Verdana.woff2") format("woff2"), url("../fonts/verdana/Verdana.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-style: bold;
+  font-weight: 700;
+  src: local(""), url("../fonts/verdana/Verdana-Bold.woff2") format("woff2"), url("../fonts/verdana/Verdana-Bold.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /*@mixin widescreen CSS {
     @media (min-width: 1441px) and (max-width: 1920px) {
         @content;
