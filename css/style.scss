@@ -28,17 +28,27 @@
     }
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @keyframes vanish {
     100% {
         opacity: 0;
         visibility: hidden;
     }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -501,6 +511,7 @@ h4 {
         height: 100%;
         overflow: hidden;
         margin-top: -1%;
+        
         @include mobile {
             height: 350px;
             width: 100%;
@@ -537,6 +548,7 @@ h4 {
             &.active {
                 opacity: 1;
                 animation: fade 1s ease;
+                animation: appear 1s;
             }
         }
     }
@@ -1144,6 +1156,7 @@ h4 {
         &.active {
             display: block;
             animation: fade 1s ease;
+            animation: appear 1s;
         }
     }
 }
