@@ -500,18 +500,21 @@ a.nav-button:hover {
 @media (max-width: 500px) {
   #navbar ul li a {
     font-size: 5vw;
+    padding: 5vw 0;
   }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
   #navbar ul li a {
     font-size: 3vw;
+    padding: 3vw 0;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   #navbar ul li a {
     font-size: 2vw;
+    padding: 2vw 0;
   }
 }
 

@@ -279,12 +279,15 @@ a {
 			text-align: center;
 			@include mobile {
 				font-size: 5vw;
+				padding: 5vw 0;
 			}
 			@include tablet {
 				font-size: 3vw;
+				padding: 3vw 0;
 			}
 			@include tablet-pro {
 				font-size: 2vw;
+				padding: 2vw 0;
 			}
 			&:hover {
 				color: $color_azure_radiance_approx;
