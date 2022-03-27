@@ -230,11 +230,11 @@ a#logo-link .logo {
   }
 }
 
-a#logo-link h1 {
+a#logo-link p {
   margin-left: 2%;
 }
 
-a#logo-link h1 .blue, a#logo-link h1 .grey {
+a#logo-link p .blue, a#logo-link p .grey {
   color: #009ff6;
   font-family: "Verdana";
   font-size: 1.2vw;
@@ -242,26 +242,26 @@ a#logo-link h1 .blue, a#logo-link h1 .grey {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  a#logo-link h1 .blue, a#logo-link h1 .grey {
+  a#logo-link p .blue, a#logo-link p .grey {
     font-size: 2.5vw;
   }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
-  a#logo-link h1 .blue, a#logo-link h1 .grey {
+  a#logo-link p .blue, a#logo-link p .grey {
     font-size: 3vw;
     font-weight: 500;
   }
 }
 
 @media (max-width: 500px) {
-  a#logo-link h1 .blue, a#logo-link h1 .grey {
+  a#logo-link p .blue, a#logo-link p .grey {
     font-size: 5vw;
     font-weight: 500;
   }
 }
 
-a#logo-link h1 .grey {
+a#logo-link p .grey {
   color: #525252;
 }
 
@@ -734,7 +734,7 @@ h4 {
   }
 }
 
-.loader .blue, .loader a#logo-link h1 .grey, a#logo-link h1 .loader .grey, .loader .grey {
+.loader .blue, .loader a#logo-link p .grey, a#logo-link p .loader .grey, .loader .grey {
   color: #009ff6;
   font-family: "Verdana";
   font-size: 2.5rem;
@@ -742,14 +742,14 @@ h4 {
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
-  .loader .blue, .loader a#logo-link h1 .grey, a#logo-link h1 .loader .grey, .loader .grey {
+  .loader .blue, .loader a#logo-link p .grey, a#logo-link p .loader .grey, .loader .grey {
     font-size: 2rem;
     font-weight: 500;
   }
 }
 
 @media (max-width: 500px) {
-  .loader .blue, .loader a#logo-link h1 .grey, a#logo-link h1 .loader .grey, .loader .grey {
+  .loader .blue, .loader a#logo-link p .grey, a#logo-link p .loader .grey, .loader .grey {
     font-size: 1.5rem;
     font-weight: 500;
   }
