@@ -2,7 +2,7 @@
 let timeline = new Date();
 let currentYear = timeline.getFullYear();
 let footerYear = document.querySelector(".current-year");
-footerYear.textContent = currentYear;
+footerYear.textContent = `${currentYear} |`;
 
 // Pre-loader functionality on load
 let loader = document.querySelector(".loader");

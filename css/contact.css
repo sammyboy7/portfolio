@@ -481,7 +481,7 @@ a.nav-button:hover {
   color: #3a3a3a;
   text-decoration: none;
   display: block;
-  padding: 20px;
+  margin: 0 1vw;
   font-family: "Verdana";
   font-size: 0.8vw;
   letter-spacing: 0.05vw;

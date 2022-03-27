@@ -63,6 +63,14 @@ footer {
 		text-align: center;
 		width: 100%;
 		margin-bottom: 7%;
+		@include tablet {
+			font-size: 2vw;
+			line-height: 3.5vw;
+		}
+		@include tablet-pro {
+			font-size: 1.5vw;
+			line-height: 3vw;
+		}
 	}
 	label {
 		width: 100%;
@@ -85,6 +93,15 @@ footer {
 		@include mobile {
 			width: 80%;
 			padding: 5% 0;
+			font-size: 3vw;
+		}
+
+		@include tablet {
+			font-size: 2vw;
+		}
+
+		@include tablet-pro {
+			font-size: 1.5vw;
 		}
 
 		&:focus {
@@ -97,6 +114,15 @@ footer {
 	input[type="text"]::placeholder,
 	input[type="email"]::placeholder {
 		font-size: 0.7vw;
+		@include mobile {
+			font-size: 3vw;
+		}
+		@include tablet {
+			font-size: 1.5vw;
+		}
+		@include tablet-pro {
+			font-size: 1.2vw;
+		}
 	}
 
 	input[type="submit"] {
@@ -125,6 +151,8 @@ footer {
 			padding-bottom: 4%;
 			padding-right: 5%;
 			padding-left: 5%;
+			font-size: 3vw;
+			border-radius: 1vw;
 		}
 		@include tablet {
 			margin-top: 3%;
@@ -132,6 +160,8 @@ footer {
 			padding-bottom: 3%;
 			padding-right: 5%;
 			padding-left: 5%;
+			font-size: 1.5vw;
+			border-radius: 0.7vw;
 		}
 		@include tablet-pro {
 			margin-top: 3%;
@@ -139,6 +169,8 @@ footer {
 			padding-bottom: 3%;
 			padding-right: 5%;
 			padding-left: 5%;
+			font-size: 1.1vw;
+			border-radius: 0.5vw;
 		}
 		&:hover {
 			color: $color_azure_radiance_approx;
@@ -154,7 +186,15 @@ footer {
 	@include mobile {
 		padding-bottom: 0.5rem;
 	}
-	span {
+	@include tablet {
+		font-size: 1.8vw;
+		padding-bottom: 7%;
+	}
+	@include tablet-pro {
+		font-size: 1.3vw;
+		padding-bottom: 7%;
+	}
+	.all-rights {
 		@include mobile {
 			display: none;
 		}
@@ -171,13 +211,22 @@ ul.social {
 		padding-bottom: 1%;
 		padding-top: 5%;
 	}
+	@include tablet {
+		padding-bottom: 4%;
+	}
+	@include tablet-pro {
+		padding-bottom: 4%;
+	}
 
 	li {
 		color: $color_nobel_approx;
 		text-align: center;
 		margin: 0 2%;
 		@include mobile {
-			margin: 0.8rem;
+			margin: 0 2.5vw;
+		}
+		@include tablet {
+			margin: 0 1.7vw;
 		}
 
 		a {
@@ -187,8 +236,16 @@ ul.social {
 				width: 1.1vw;
 				height: 1.1vw;
 				@include mobile {
-					width: 1.2rem;
-					height: 1.2rem;
+					width: 4.7vw;
+					height: 4.7vw;
+				}
+				@include tablet {
+					width: 2.5vw;
+					height: 2.5vw;
+				}
+				@include tablet-pro {
+					width: 2vw;
+					height: 2vw;
 				}
 				&:hover {
 					fill: $white;
