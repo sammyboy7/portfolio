@@ -1,23 +1,21 @@
 // get current year on the footer text
 let timeline = new Date();
 let currentYear = timeline.getFullYear();
-console.log(currentYear);
-
 let footerYear = document.querySelector(".current-year");
 footerYear.textContent = currentYear;
 
+// Pre-loader functionality on load
 let loader = document.querySelector(".loader");
 if (loader != null && typeof loader != undefined) {
-	// Pre-loader function on load
 	window.onload = () => {
 		loader.classList.add("disappear");
 		loader.classList.remove("animate__infinite");
 	};
 }
 
+// Sticky Header functionality on scroll
 let header = document.querySelector("header");
 if (header != null && typeof header != undefined) {
-	// Sticky Header function on scroll
 	window.onscroll = () => {
 		if (window.pageYOffset > 0) {
 			header.classList.add("sticky");
@@ -25,23 +23,6 @@ if (header != null && typeof header != undefined) {
 			header.classList.remove("sticky");
 		}
 	};
-}
-
-// Menu toggle function on responsive tablet/mobile design
-const toggle_ = document.querySelector(".toggle");
-const navlinks_ = document.querySelector(".navlinks");
-
-if (
-	toggle_ != null &&
-	navlinks_ != null &&
-	typeof toggle_ != undefined &&
-	typeof navlinks_ != undefined
-) {
-	const toggle = document.getElementsByClassName("toggle")[0];
-	const navlinks = document.getElementsByClassName("navlinks")[0];
-	toggle.addEventListener("click", () => {
-		navlinks.classList.toggle("active");
-	});
 }
 
 // social media toggle function on responsive tablet/mobile design
@@ -69,7 +50,6 @@ function _class(name) {
 const tabheader = document.querySelector(".tab-header");
 
 if (tabheader != null && tabheader != undefined) {
-	// let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
 	let tabPanes = tabheader.getElementsByTagName("div");
 	for (let i = 0; i < tabPanes.length; i++) {
 		tabPanes[i].addEventListener("click", function () {
