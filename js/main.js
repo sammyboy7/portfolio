@@ -2,7 +2,10 @@
 let timeline = new Date();
 let currentYear = timeline.getFullYear();
 let footerYear = document.querySelector(".current-year");
-footerYear.textContent = `${currentYear} |`;
+
+if (footerYear !== null) {
+	footerYear.textContent = `${currentYear} |`;
+}
 
 // Pre-loader functionality on load
 let loader = document.querySelector(".loader");
@@ -175,7 +178,10 @@ if (
 
 let span = document.querySelector(".slide-toggle");
 let project_slide = document.querySelector(".project-slide");
-let product_page = Math.ceil(project_slide.length / 4);
+if (project_slide !== null) {
+	var product_page = Math.ceil(project_slide.length / 4);
+}
+
 let l = 0;
 let movePer = 25.34;
 let maxMove = 203;
@@ -211,9 +217,11 @@ let left_mover = () => {
 	}
 };
 
-span[1].onclick = () => {
-	right_mover();
-};
-span[0].onclick = () => {
-	left_mover();
-};
+if (span !== null) {
+	span[1].onclick = () => {
+		right_mover();
+	};
+	span[0].onclick = () => {
+		left_mover();
+	};
+}
