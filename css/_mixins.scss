@@ -13,46 +13,45 @@ $color_nobel_approx: #b4b0b0;
 //fonts
 
 @font-face {
-    font-family: 'Verdana';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/verdana/Verdana.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/verdana/Verdana.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/verdana/Verdana.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/verdana/Verdana.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  @font-face {
-    font-family: 'Verdana';
-    font-style: bold;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/verdana/Verdana-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/verdana/Verdana-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
+@font-face {
+  font-family: "Verdana";
+  font-style: bold;
+  font-weight: 700;
+  src: local(""), url("../fonts/verdana/Verdana-Bold.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/verdana/Verdana-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 @mixin mobile {
-    @media (max-width: 500px) {
-        @content;
-    }
+  @media (max-width: 500px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media (min-width: 501px) and (max-width: 768px) {
-        @content;
-    }
+  @media (min-width: 501px) and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin tablet-pro {
-    @media (min-width: 769px) and (max-width: 1024px) {
-        @content;
-    }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
 }
 
 @mixin laptop {
-    @media (min-width: 1025px) and (max-width: 1440px) {
-        @content;
-    }
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    @content;
+  }
 }
 
 /*@mixin widescreen CSS {
@@ -62,7 +61,7 @@ $color_nobel_approx: #b4b0b0;
 }*/
 
 @mixin ultrawide {
-    @media (min-width: 1921px) {
-        @content;
-    }
+  @media (min-width: 1921px) {
+    @content;
+  }
 }

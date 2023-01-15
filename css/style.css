@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/verdana/Verdana.woff2") format("woff2"), url("../fonts/verdana/Verdana.woff") format("woff");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-style: bold;
   font-weight: 700;
   src: local(""), url("../fonts/verdana/Verdana-Bold.woff2") format("woff2"), url("../fonts/verdana/Verdana-Bold.woff") format("woff");
@@ -28,7 +28,7 @@
     }
 }*/
 @font-face {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/verdana/Verdana.woff2") format("woff2"), url("../fonts/verdana/Verdana.woff") format("woff");
@@ -36,7 +36,7 @@
 }
 
 @font-face {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-style: bold;
   font-weight: 700;
   src: local(""), url("../fonts/verdana/Verdana-Bold.woff2") format("woff2"), url("../fonts/verdana/Verdana-Bold.woff") format("woff");
@@ -3037,7 +3037,7 @@ h4 {
 }
 
 @font-face {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/verdana/Verdana.woff2") format("woff2"), url("../fonts/verdana/Verdana.woff") format("woff");
@@ -3045,7 +3045,7 @@ h4 {
 }
 
 @font-face {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-style: bold;
   font-weight: 700;
   src: local(""), url("../fonts/verdana/Verdana-Bold.woff2") format("woff2"), url("../fonts/verdana/Verdana-Bold.woff") format("woff");
